@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #E02C6D;
+    --font-color: #3A3A3A;
+}
+body{
+    
+    background-color: #ededed;
+}
+.full-width {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    border: none;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-round {
+    border-radius: 41px;
+}
+.colored{
+    color: #FB8200;
+}
+.see-more{
+    text-align: right;
+    margin: 19px 10px;
+    color: var(--primary-color);
+}
+
+/* Header-section styling */
+.nav-bar {
+    display: none;
+}
+
+.header-section,
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-section {
+    padding: 30px 0;
+}
+
+.item {
+    list-style: none;
+    margin-left: 34px;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+.header-title a h3{
+    font-size: 24px;
+    font-weight: 700;
+} 
+
+/* banner-section */
+.banner-content {
+    width: 55%;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-color);
+}
+
+.banner-title {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.banner-description {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+/* contributor */
+
+.contributor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* gradient border */
+    border-width: 3px;
+    border-style: solid;
+    border-image:
+        radial-gradient(red,
+            rgba(0, 0, 0, 0)) 1 100%;
+    margin: 50px auto;
+}
+
+.contributor img {
+    padding: 20px;
+
+}
+
+/* collection section */
+.collection-section{
+    margin: 50px auto;
+}
+.collection-item-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.collection-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--font-color);
+    margin: 30px auto;
+}
+.collection-item{
+    width: 329px;
+    height: 476px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+}
+.item-content{
+    background-color: #fff;
+    margin: 15px 0;
+}
+.item-title, .item-price, .item-rating, .item-description{
+    margin: 15px 0;
+}
+.item-title{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+}
+.item-price{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.item-rating ul{
+    display: flex;
+    list-style: none;
+}
+.item-rating ul li{
+    margin-right: 5px;
+}
+.rating{
+    margin-left: 5px;
+}
+.item-rating, .item-description{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+/* Gear */
+
+.gear-title{
+    font-weight: 700;
+    font-size: 38px;
+}
+.gear-description{
+    font-weight: 700;
+    line-height: 28px;
+}
+.gear-margin{
+    margin: 60px auto;
+}
+
+/* footer section */
+
+.footer-section{
+    background-color: #18191F;
+    padding: 50px;
+    color: white;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-title{
+    font-size: 29px;
+    font-weight: 700;
+}
+.footer-para{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.icons{
+    text-align: center;
+}
+.icons ul li{
+    list-style: none;
+    margin-left: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+.icons ul{
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------------------------------------------------
+                        Mobile device styling
+-------------------------------------------------------------------- */
+
+@media only screen and (max-width:576px) {
+    .full-width {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .nav-bar {
+        display: inline;
+    }
+
+    .line {
+        background-color: black;
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5 {
+        display: none;
+    }
+
+    /* banner-section */
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        width: 95%;
+        text-align: center;
+    }
+    .collection-item-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .collection-item img{
+        align-items: center;
+        text-align: center;
+    }
+
+    .gear-margin{
+        margin: 60px auto;
+        flex-direction: column-reverse;
+    }
+    .see-more{
+        margin: 19px 100px;
+    }
+}
