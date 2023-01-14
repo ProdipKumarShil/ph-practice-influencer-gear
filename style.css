@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -51,10 +53,11 @@ body{
 .items {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-section {
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 
 .item {
@@ -85,7 +88,7 @@ a {
 }
 
 .banner-title {
-    font-size: 52px;
+    font-size: 45px;
     font-weight: 700;
 }
 
@@ -146,7 +149,7 @@ a {
     margin: 15px 0;
 }
 .item-title, .item-price, .item-rating, .item-description{
-    margin: 15px 0;
+    margin: 2px 0;
 }
 .item-title{
     font-weight: 500;
@@ -178,7 +181,7 @@ a {
 
 .gear-title{
     font-weight: 700;
-    font-size: 38px;
+    font-size: 30px;
 }
 .gear-description{
     font-weight: 700;
